@@ -6,6 +6,11 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	font-size: 18px;
+	@include small {
+		font-size: 14px;
+		bottom: 10px;
+		right: 10px;
+	}
 	&__icon {
 		width: 20px;
 		margin-left: 5px;
@@ -14,8 +19,7 @@
 			margin-left: 5px;
 		}
 	}
-	&__link {
-		font-weight: 400;
+	&__link {		
 		text-decoration: none;
 		color: whitesmoke;
 		padding: 20px 20px 0 20px;
@@ -25,10 +29,5 @@
 		@include small {
 			padding: 10px 10px 0 10px;		
 		}
-	}
-	@include small {
-		font-size: 14px;
-		bottom: 10px;
-		right: 10px;
 	}
 }
