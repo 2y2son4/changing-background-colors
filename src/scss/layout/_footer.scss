@@ -1,0 +1,24 @@
+.footer {    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    &__small {
+        color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+    }
+    &__img {        
+        padding: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        color: whitesmoke;
+        &:hover {
+            color: yellowgreen;
+            border-bottom: 2px yellowgreen solid;
+        }
+    }
+}

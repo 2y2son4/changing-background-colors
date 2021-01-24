@@ -4,12 +4,16 @@ const body = document.querySelector('.body');
 
 const title = document.querySelector('.page__title');
 
+const footer = document.querySelector('.footer');
+
 
 function changeBg (event) {
 
-  body.classList.remove('body', 'bg-a', 'bg-b', 'bg-c', 'bg-d', 'bg-f', 'bg-g', 'bg-h', 'bg-i', 'bg-j', 'bg-k', 'bg-l', 'bg-m', 'bg-n', 'bg-o', 'bg-p', 'bg-q', 'bg-r', 'bg-s', 'bg-t', 'bg-u', 'bg-v', 'bg-w', 'bg-x', 'bg-y', 'bg-z');
+  body.classList.remove('body', 'bg-a', 'bg-b', 'bg-c', 'bg-d', 'bg-e','bg-f', 'bg-g', 'bg-h', 'bg-i', 'bg-j', 'bg-k', 'bg-l', 'bg-m', 'bg-n', 'bg-o', 'bg-p', 'bg-q', 'bg-r', 'bg-s', 'bg-t', 'bg-u', 'bg-v', 'bg-w', 'bg-x', 'bg-y', 'bg-z');
   title.classList.remove('page__title');
   title.classList.add('hidden');
+  footer.classList.remove('footer');
+  footer.classList.add('hidden');
 
   if (event.key === 'a') {
     body.classList.toggle('bg-a');
