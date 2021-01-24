@@ -4,15 +4,14 @@
 .hidden {
 	display: none;
 }
-.bg {
-	
+.bg {	
 	&-a {
-		background-color: #f0f8ff;
+		background-color: #9966cc;
 		@include beforeBg {
-			@include contentBg("Alice blue", #4169e1);
+			@include contentBg("Amethyst", #9F2B68);
 		}
 		@include afterBg {
-			@include contentBg("#f0f8ff", #4169e1);
+			@include contentBg("#9966cc", #9F2B68);
 		}
 	}
 	&-b {
