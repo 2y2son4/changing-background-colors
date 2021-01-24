@@ -1,557 +1,243 @@
 .body {
 	background-color: black;
 }
-
 .hidden {
   display: none;
 }
 .bg {
   text-align: center;
   &-a {
-    background-color: #f0f8ff;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Alice blue";
-      font-size: 50px;
-      color: royalblue;
-    }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#f0f8ff";
-      font-size: 50px;
-      color: royalblue;
-    }
+    background-color: #f0f8ff; 
+      @include beforeBg {
+        @include contentBg("Alice blue", #4169e1)
+      }
+      @include afterBg {
+        @include contentBg("#f0f8ff", #4169e1)
+      }
   }
   &-b {
-    background-color: #4169e1;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "royal Blue";
-      font-size: 50px;
-      color: aliceblue;
+    background-color: #deb887;
+    @include beforeBg {
+      @include contentBg("Burlywood", aliceblue)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#4169e1";
-      font-size: 50px;
-      color: aliceblue;
-    }
+    @include afterBg {
+      @include contentBg("#deb887", aliceblue)
+    }    
   }
   &-c {
     background-color: #dc143c;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Crimsom";
-      font-size: 50px;
-      color: whitesmoke;
+    @include beforeBg {
+      @include contentBg("Crimsom", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#dc143c";
-      font-size: 50px;
-      color: whitesmoke;
-    }
+    @include afterBg {
+      @include contentBg("#dc143c", whitesmoke)
+    }    
   }
   &-d {
     background-color: #9932cc;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Dark orchid";
-      font-size: 50px;
-      color: whitesmoke;
+    @include beforeBg {
+      @include contentBg("Dark orchid", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#9932cc";
-      font-size: 50px;
-      color: whitesmoke;
-    }
+    @include afterBg {
+      @include contentBg("#9932cc", whitesmoke)
+    }    
   }
   &-e {
     background-color: #279b61;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Eucalyptus";
-      font-size: 50px;
-      color: darkgreen;
+    @include beforeBg {
+      @include contentBg("Eucalyptus", darkgreen)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#279b61";
-      font-size: 50px;
-      color: darkgreen;
+    @include afterBg {
+      @include contentBg("#279b61", darkgreen)
     }
   }
   &-f {
     background-color: #b22222;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Fire brick";
-      font-size: 50px;
-      color: whitesmoke;
+    @include beforeBg {
+      @include contentBg("Fire brick", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#b22222";
-      font-size: 50px;
-      color: whitesmoke;
+    @include afterBg {
+      @include contentBg("#b22222", whitesmoke)
     }
   }
   &-g {
     background-color: goldenrod;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Golden rod";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Golden rod", 250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#9932cc";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#9932cc", 250a0a)
     }
   }
   &-h {
     background-color: #f0fff0;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Honeydew";
-      font-size: 50px;
-      color: #757503;
+    @include beforeBg {
+      @include contentBg("Honeydew", #757503)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#f0fff0";
-      font-size: 50px;
-      color: #757503;
+    @include afterBg {
+      @include contentBg("#f0fff0", #757503)
     }
   }
   &-i {
     background-color: #4b0082;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Indigo";
-      font-size: 50px;
-      color: whitesmoke;
+    @include beforeBg {
+      @include contentBg("Indigo", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#4b0082";
-      font-size: 50px;
-      color: whitesmoke;
+    @include afterBg {
+      @include contentBg("#4b0082", whitesmoke)
     }
   }
   &-j {
     background-color: #e0d191;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Jazzamoon";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Jazzamoon", #250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#e0d191";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#e0d191", #250a0a)
     }
   }
   &-k {
     background-color: #f0e68c;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Khaki";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Khaki", #250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#f0e68c";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#f0e68c", #250a0a)
     }
   }
   &-l {
     background-color:	#32CD32;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Lime green";
-      font-size: 50px;
-      color: yellow;
+    @include beforeBg {
+      @include contentBg("Lime green", yellow)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "	#32CD32";
-      font-size: 50px;
-      color:yellow;
+    @include afterBg {
+      @include contentBg("#32CD32", yellow)
     }
   }
   &-m {
     background-color: #ff00ff;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Magenta";
-      font-size: 50px;
-      color: black;
+    @include beforeBg {
+      @include contentBg("Magenta", black)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#ff00ff";
-      font-size: 50px;
-      color: black;
+    @include afterBg {
+      @include contentBg("#ff00ff", black)
     }
   }
   &-n {
     background-color: #ffdead;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Navajo white";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Navajo white", #250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#ffdead";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#ffdead", #250a0a)
     }
   }
   &-o {
     background-color: #808000;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Olive";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Olive", #250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#808000";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#808000", #250a0a)
     }
   }
   &-p {
     background-color: #800080;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Purple";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Purple", #250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#800080";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#800080", #250a0a)
     }
   }
   &-q {
     background-color: #4bba17;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Quartile";
-      font-size: 50px;
-      color: #250a0a;
+    @include beforeBg {
+      @include contentBg("Quartile", #250a0a)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#4CBB17";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#4CBB17", #250a0a)
     }
   }
   &-r {
-    background-color: #e0d191;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Jazzamoon";
-      font-size: 50px;
-      color: #250a0a;
+    background-color: #663399;
+    @include beforeBg {
+      @include contentBg("Rebecca purple", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#e0d191";
-      font-size: 50px;
-      color: #250a0a;
+    @include afterBg {
+      @include contentBg("#663399", whitesmoke)
     }
-  }
+  } 
   &-s {
     background-color: #fa8072;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Salmon";
-      font-size: 50px;
-      color: #353535;
+    @include beforeBg {
+      @include contentBg("Salmon", #353535)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#fa8072";
-      font-size: 50px;
-      color: #353535;
+    @include afterBg {
+      @include contentBg("#fa8072", #353535)
     }
   }
   &-t {
     background-color: #008080;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Teal";
-      font-size: 50px;
-      color: navy;
+    @include beforeBg {
+      @include contentBg("Teal", navy)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#008080";
-      font-size: 50px;
-      color: navy;
+    @include afterBg {
+      @include contentBg("#008080", navy)
     }
   }
   &-u {
     background-color: #120A8F;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Ultramarine";
-      font-size: 50px;
-      color: whitesmoke;
+    @include beforeBg {
+      @include contentBg("Ultramarine", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#120A8F";
-      font-size: 50px;
-      color: whitesmoke;
+    @include afterBg {
+      @include contentBg("#120A8F", whitesmoke)
     }
   }
   &-v {
     background-color: 	#4b019c;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "ultra Violet";
-      font-size: 50px;
-      color: whitesmoke;
+    @include beforeBg {
+      @include contentBg("Ultraviolet", whitesmoke)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "	#4b019c";
-      font-size: 50px;
-      color: whitesmoke;
+    @include afterBg {
+      @include contentBg("#4b019c", whitesmoke)
     }
   }
   &-w {
     background-color: #f5deb3;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Wheat";
-      font-size: 50px;
-      color: #cc8809;
+    @include beforeBg {
+      @include contentBg("Wheat", #cc8809)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#f5deb3";
-      font-size: 50px;
-      color: #cc8809;
-    }
+    @include afterBg {
+      @include contentBg("#f5deb3", #cc8809)
+    }    
   }
   &-x {
     background-color: #ffb6c1;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Xylophone";
-      font-size: 50px;
-      color: #353535;
+    @include beforeBg {
+      @include contentBg("Xylophone", #353535)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#ffb6c1";
-      font-size: 50px;
-      color: #353535;
+    @include afterBg {
+      @include contentBg("#ffb6c1", #353535)
     }
   }
   &-y {
     background-color: #a97164;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Yapan";
-      font-size: 50px;
-      color: yellowgreen;
+    @include beforeBg {
+      @include contentBg("Yapan", yellowgreen)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#a97164";
-      font-size: 50px;
-      color: yellowgreen;
+    @include afterBg {
+      @include contentBg("#a97164", yellowgreen)
     }
   }
   &-z {
     background-color: #bc8a52;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 400%);
-      content: "Zoboba";
-      font-size: 50px;
-      color: maroon;
+    @include beforeBg {
+      @include contentBg("Zoboba", maroon)
     }
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 600%);
-      content: "#bc8a52";
-      font-size: 50px;
-      color: maroon;
+    @include afterBg {
+      @include contentBg("#bc8a52", maroon)
     }
   }
 }
-

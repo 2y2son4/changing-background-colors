@@ -1,0 +1,25 @@
+@mixin beforeBg {
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 400%);
+		font-size: 50px;
+		@content;
+	}
+}
+@mixin afterBg {
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 600%);
+		font-size: 50px;
+		@content;
+	}
+}
+
+@mixin contentBg($content, $color) {
+	content: $content;
+	color: $color;
+}
