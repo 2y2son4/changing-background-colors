@@ -10,12 +10,18 @@
     color: whitesmoke;
     text-align: center;
     display: block;
-    font-size: 28px;
+    font-size: 38px;
+    @include small {
+      font-size: 24px;
+    }
   }
   &__subtitle {
     color: whitesmoke;
     font-weight: 400;
     font-size: 24px;
+    @include small {
+      font-size: 18px;
+    }
   }
 }
 

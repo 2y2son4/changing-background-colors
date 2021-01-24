@@ -5,6 +5,11 @@
 		left: 50%;
 		transform: translate(-50%, 400%);
 		font-size: 50px;
+		text-align: center;
+		@include small {
+			transform: translate(-50%, 100%);
+			font-size: 30px;					
+		}
 		@content;
 	}
 }
@@ -15,6 +20,11 @@
 		left: 50%;
 		transform: translate(-50%, 600%);
 		font-size: 50px;
+		text-align: center;
+		@include small {
+			transform: translate(-50%, 300%);
+			font-size: 30px;
+		}
 		@content;
 	}
 }
@@ -22,4 +32,10 @@
 @mixin contentBg($content, $color) {
 	content: $content;
 	color: $color;
+}
+
+@mixin small {
+	@media all and (max-width: 768px) {
+	  @content;
+	}
 }
