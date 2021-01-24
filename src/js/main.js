@@ -9,7 +9,7 @@ const footer = document.querySelector('.footer');
 
 function changeBg (event) {
 
-  body.classList.remove('body', 'bg-a', 'bg-b', 'bg-c', 'bg-d', 'bg-e','bg-f', 'bg-g', 'bg-h', 'bg-i', 'bg-j', 'bg-k', 'bg-l', 'bg-m', 'bg-n', 'bg-o', 'bg-p', 'bg-q', 'bg-r', 'bg-s', 'bg-t', 'bg-u', 'bg-v', 'bg-w', 'bg-x', 'bg-y', 'bg-z');
+  body.classList = '';
   title.classList.remove('page__title');
   title.classList.add('hidden');
   footer.classList.remove('footer');
@@ -71,9 +71,8 @@ function changeBg (event) {
     body.classList.add('body');
     title.classList.remove('hidden');
     title.classList.add('page__title');
+    footer.classList.add('footer');
   }
 }
 
-
 document.addEventListener('keydown', changeBg);
-
