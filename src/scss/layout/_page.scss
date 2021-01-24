@@ -2,12 +2,7 @@
 .body {
 	background-color: black;
 }
-.page {
-  &__title {
-    color: whitesmoke;
-    text-align: center;
-  }
-}
+
 .hidden {
   display: none;
 }
@@ -539,7 +534,7 @@
     }
   }
   &-z {
-    background-color: #39a78e;
+    background-color: #bc8a52;
     &::before {
       position: absolute;
       top: 0;
@@ -547,16 +542,16 @@
       transform: translate(-50%, 400%);
       content: "Zoboba";
       font-size: 50px;
-      color: whitesmoke;
+      color: maroon;
     }
     &::after {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%, 600%);
-      content: "#39a78e";
+      content: "#bc8a52";
       font-size: 50px;
-      color: whitesmoke;
+      color: maroon;
     }
   }
 }

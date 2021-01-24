@@ -4,6 +4,8 @@ const body = document.querySelector('.body');
 
 const title = document.querySelector('.page__title');
 
+const subtitle = document.querySelector('.page__subtitle');
+
 const footer = document.querySelector('.footer');
 
 
@@ -12,6 +14,8 @@ function changeBg (event) {
   body.classList = '';
   title.classList.remove('page__title');
   title.classList.add('hidden');
+  subtitle.classList.remove('page__subtitle');
+  subtitle.classList.add('hidden');
   footer.classList.remove('footer');
   footer.classList.add('hidden');
 
@@ -71,6 +75,8 @@ function changeBg (event) {
     body.classList.add('body');
     title.classList.remove('hidden');
     title.classList.add('page__title');
+    subtitle.classList.remove('hidden');
+    subtitle.classList.add('page__subtitle');
     footer.classList.add('footer');
   }
 }

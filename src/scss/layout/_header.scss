@@ -1,5 +1,20 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.page {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &__title {
+    color: whitesmoke;
+    text-align: center;
+    display: block;
+  }
+  &__subtitle {
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 24px;
+  }
 }
+
