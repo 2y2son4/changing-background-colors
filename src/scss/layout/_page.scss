@@ -34,12 +34,12 @@
 		}
 	}
 	&-d {
-		background-color: #9932cc;
+		background-color: #FED85D;
 		@include beforeBg {
-			@include contentBg("Dark orchid", whitesmoke);
+			@include contentBg("Dandelion", #965b29);
 		}
 		@include afterBg {
-			@include contentBg("#9932cc", whitesmoke);
+			@include contentBg("#9932cc", #965b29);
 		}
 	}
 	&-e {
@@ -124,12 +124,12 @@
 		}
 	}
 	&-n {
-		background-color: #ffdead;
+		background-color: #E9FFDB;
 		@include beforeBg {
-			@include contentBg("Navajo white", #250a0a);
+			@include contentBg("Nyanza", #250a0a);
 		}
 		@include afterBg {
-			@include contentBg("#ffdead", #250a0a);
+			@include contentBg("#e9ffdB", #250a0a);
 		}
 	}
 	&-o {
@@ -160,12 +160,12 @@
 		}
 	}
 	&-r {
-		background-color: #663399;
+		background-color: #E30B5C;
 		@include beforeBg {
-			@include contentBg("Rebecca purple", whitesmoke);
+			@include contentBg("Razzmatazz", whitesmoke);
 		}
 		@include afterBg {
-			@include contentBg("#663399", whitesmoke);
+			@include contentBg("#E30B5C", whitesmoke);
 		}
 	}
 	&-s {
@@ -187,21 +187,21 @@
 		}
 	}
 	&-u {
-		background-color: #120a8f;
-		@include beforeBg {
-			@include contentBg("Ultramarine", whitesmoke);
-		}
-		@include afterBg {
-			@include contentBg("#120A8F", whitesmoke);
-		}
-	}
-	&-v {
 		background-color: #4b019c;
 		@include beforeBg {
 			@include contentBg("Ultraviolet", whitesmoke);
 		}
 		@include afterBg {
 			@include contentBg("#4b019c", whitesmoke);
+		}
+	}
+	&-v {
+		background-color: #ee82ee;
+		@include beforeBg {
+			@include contentBg("Violet", whitesmoke);
+		}
+		@include afterBg {
+			@include contentBg("#ee82ee", whitesmoke);
 		}
 	}
 	&-w {
