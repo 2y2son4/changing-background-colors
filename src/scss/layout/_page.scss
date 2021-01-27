@@ -24,12 +24,12 @@
 		}
 	}
 	&-c {
-		background-color: #dc143c;
+		background-color: #fabada;
 		@include beforeBg {
-			@include contentBg("Crimsom", whitesmoke);
+			@include contentBg("Cotton Candy", #dc143c);
 		}
 		@include afterBg {
-			@include contentBg("#dc143c", whitesmoke);
+			@include contentBg("#fabada", #dc143c);
 		}
 	}
 	&-d {
