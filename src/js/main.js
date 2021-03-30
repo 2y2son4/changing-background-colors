@@ -8,9 +8,7 @@ const subtitle = document.querySelector('.page__subtitle');
 
 const footer = document.querySelector('.footer');
 
-
-function changeBg (event) {
-
+function changeBg(event) {
   body.classList = '';
   title.classList.remove('page__title');
   title.classList.add('hidden');
@@ -21,59 +19,60 @@ function changeBg (event) {
 
   let eventKeyLowerCase = event.key.toLowerCase();
 
-  /*body.classList.toggle('bg-' + event.key);*/
+  // body.classList.toggle('bg-' + event.key);
+  // event.key === 'a' || event.key === 'A'
 
-  if (event.key === 'a' || event.key === 'A') {
+  if (eventKeyLowerCase === 'a') {
     body.classList.toggle('bg-a');
-  } else if(eventKeyLowerCase === 'b') {
+  } else if (eventKeyLowerCase === 'b') {
     body.classList.toggle('bg-b');
-  } else if(eventKeyLowerCase === 'c') {
+  } else if (eventKeyLowerCase === 'c') {
     body.classList.toggle('bg-c');
-  } else if(eventKeyLowerCase === 'd') {
+  } else if (eventKeyLowerCase === 'd') {
     body.classList.toggle('bg-d');
-  } else if(eventKeyLowerCase === 'e') {
+  } else if (eventKeyLowerCase === 'e') {
     body.classList.toggle('bg-e');
-  } else if(eventKeyLowerCase === 'f') {
+  } else if (eventKeyLowerCase === 'f') {
     body.classList.toggle('bg-f');
-  } else if(eventKeyLowerCase === 'g') {
+  } else if (eventKeyLowerCase === 'g') {
     body.classList.toggle('bg-g');
-  } else if(eventKeyLowerCase === 'h') {
+  } else if (eventKeyLowerCase === 'h') {
     body.classList.toggle('bg-h');
-  } else if(eventKeyLowerCase === 'i') {
+  } else if (eventKeyLowerCase === 'i') {
     body.classList.toggle('bg-i');
-  } else if(eventKeyLowerCase === 'j') {
+  } else if (eventKeyLowerCase === 'j') {
     body.classList.toggle('bg-j');
-  } else if(eventKeyLowerCase === 'k') {
+  } else if (eventKeyLowerCase === 'k') {
     body.classList.toggle('bg-k');
-  } else if(eventKeyLowerCase === 'l') {
+  } else if (eventKeyLowerCase === 'l') {
     body.classList.toggle('bg-l');
-  } else if(eventKeyLowerCase === 'm') {
+  } else if (eventKeyLowerCase === 'm') {
     body.classList.toggle('bg-m');
-  } else if(eventKeyLowerCase === 'n') {
+  } else if (eventKeyLowerCase === 'n') {
     body.classList.toggle('bg-n');
-  } else if(eventKeyLowerCase === 'o') {
+  } else if (eventKeyLowerCase === 'o') {
     body.classList.toggle('bg-o');
-  } else if(eventKeyLowerCase === 'p') {
+  } else if (eventKeyLowerCase === 'p') {
     body.classList.toggle('bg-p');
-  } else if(eventKeyLowerCase === 'q') {
+  } else if (eventKeyLowerCase === 'q') {
     body.classList.toggle('bg-q');
-  } else if(eventKeyLowerCase === 'r') {
+  } else if (eventKeyLowerCase === 'r') {
     body.classList.toggle('bg-r');
-  } else if(eventKeyLowerCase === 's') {
+  } else if (eventKeyLowerCase === 's') {
     body.classList.toggle('bg-s');
-  } else if(eventKeyLowerCase === 't') {
+  } else if (eventKeyLowerCase === 't') {
     body.classList.toggle('bg-t');
-  } else if(eventKeyLowerCase === 'u') {
+  } else if (eventKeyLowerCase === 'u') {
     body.classList.toggle('bg-u');
-  } else if(eventKeyLowerCase === 'v') {
+  } else if (eventKeyLowerCase === 'v') {
     body.classList.toggle('bg-v');
-  } else if(eventKeyLowerCase === 'w') {
+  } else if (eventKeyLowerCase === 'w') {
     body.classList.toggle('bg-w');
-  } else if(eventKeyLowerCase === 'x') {
+  } else if (eventKeyLowerCase === 'x') {
     body.classList.toggle('bg-x');
-  } else if(eventKeyLowerCase === 'y') {
+  } else if (eventKeyLowerCase === 'y') {
     body.classList.toggle('bg-y');
-  } else if(eventKeyLowerCase === 'z') {
+  } else if (eventKeyLowerCase === 'z') {
     body.classList.toggle('bg-z');
   } else {
     body.classList.add('body');

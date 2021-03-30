@@ -52,3 +52,12 @@ public
 
 # vscode
 .vscode
+
+.info
+
+# other files
+
+.browserslistrc
+.csscomb.json
+..eslintrc.json
+

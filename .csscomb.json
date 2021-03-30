@@ -20,7 +20,7 @@
     "space-between-declarations": "\n",
     "strip-spaces": true,
     "unitless-zero": true,
-    "sort-order": [
+    "sort-order": [   
       [
 				"-webkit-font-smoothing",
 				"-moz-osx-font-smoothing",

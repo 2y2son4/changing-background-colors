@@ -1,32 +1,42 @@
 .footer {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;	
-	@include small {
-		font-size: 14px;
-		bottom: 10px;
-		right: 10px;
-	}
-	&__icon {
-		width: 20px;
-		margin-left: 5px;
-		@include small {
-			width: 15px;
-			margin-left: 5px;
-		}
-	}
-	&__link {		
-		text-decoration: none;
-		color: whitesmoke;
-		padding: 20px 20px 0 20px;
-		&:hover {
-			color: yellowgreen;
-		}
-		@include small {
-			padding: 10px 10px 0 10px;		
-		}
-	}
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 14px;
+  @include small {
+    left: 20px;
+    display: block;
+    font-size: 14px;
+    bottom: 10px;
+    right: 10px;
+  }
+  &__span {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px 20px 0 20px;
+    @include small {
+      display: block;
+    }
+  }
+  &__icon {
+    width: 20px;
+    margin-left: 5px;
+    @include small {
+      width: 15px;
+      margin-left: 5px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: whitesmoke;
+    &:hover {
+      color: yellowgreen;
+    }
+    @include small {
+      font-size: 12px;
+    }
+  }
 }
